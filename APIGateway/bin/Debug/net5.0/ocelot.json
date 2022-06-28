@@ -1,0 +1,101 @@
+{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/api/FlightBooking/SearchFlights",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "61014"
+
+        }
+      ],
+
+      "key": "flightKey",
+      "UpstreamPathTemplate": "/searchFlight/{flight}",
+      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FlightBooking/BookFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "61014"
+
+        }
+      ],
+
+      "key": "bookflight",
+      "UpstreamPathTemplate": "/BookFlight",
+      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FlightBooking/AddPassengerDetails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "61014"
+
+        }
+      ],
+
+      "key": "passenger",
+      "UpstreamPathTemplate": "/AddPassengerDetails/{passenger}",
+      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FlightBooking/BookedTicketDetails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "61014"
+
+        }
+      ],
+
+      "key": "ticketdetails",
+      "UpstreamPathTemplate": "/BookedTicketDetails/{PNR}",
+      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FlightBooking/CancelTicket",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "61014"
+
+        }
+      ],
+
+      "key": "cancelticket",
+      "UpstreamPathTemplate": "/CancelTicket/{PNR}",
+      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FlightBooking/BookedTicketHistory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "61014"
+
+        }
+      ],
+
+      "key": "ticketHistory",
+      "UpstreamPathTemplate": "/BookedTicketHistory/{EmailId}",
+      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+
+}
