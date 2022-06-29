@@ -1,0 +1,24 @@
+12 principles of Microservices
+_________________
+1. application deploy: running instance of a application
+
+configuration.json file
+
+consul(service restry is for service descovery discussed in architecture)
+_____________
+download consul from consul.io
+unZip it
+go to command prompt
+type--> cd Downloads
+type-->consul agent --dev
+go to localhost:8500 in browser
+
+Rabbit mq command to run after installation
+_________________________________----
+docker run -d --hostname my-rabbit --name ecom-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+
+go to the URL--> localhost:15672
+
+Provide any username and password
+UserName: guest
+password: guest
