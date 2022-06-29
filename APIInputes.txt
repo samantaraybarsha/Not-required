@@ -1,0 +1,83 @@
+FlightBookingSystem
+___________________
+Create Flight by admin
+_____________________------
+{
+  "flightId": 1,
+  "flightNumber": "IND123",
+  "airline": "IND",
+  "fromPlace": "BLR",
+  "toPlace": "BBS",
+  "departureTime": "11AM",
+  "arrivalTime": "12PM",
+  "scheduledDateId": 3,
+  "instrumentUsed": "Dummy",
+  "totalNumberOfBusinessClassSeats": 20,
+  "totalNumberOfNonBusinessClassSeats": 50,
+  "totalCost": 5000,
+  "numberofRows": 30
+}
+-----------------------------------------
+{
+  "flightId": 2,
+  "flightNumber": "IND465",
+  "airline": "IND",
+  "fromPlace": "BBS",
+  "toPlace": "BLR",
+  "departureTime": "11AM",
+  "arrivalTime": "12PM",
+  "scheduledDateId": 3,
+  "instrumentUsed": "Dummy",
+  "totalNumberOfBusinessClassSeats": 20,
+  "totalNumberOfNonBusinessClassSeats": 50,
+  "totalCost": 5000,
+  "numberofRows": 30
+}
+
+SearchFlight(FlightBooking Controller)
+____________________________________
+{
+  "fromPlace": "BLR",
+  "toPlace": "BBS",
+  "scheduledDateId": 3,
+  "tripType": "OneWay"
+}
+
+Add passenger
+______________
+{
+  "passengerId": 0,
+  "ticketId": 2,
+  "name": "barsha",
+  "age": 27,
+  "email": "barsha@123",
+  "seatNumber": "123ABc",
+  "meal": "Veg"
+}
+
+BookedTicketDetails
+____________________
+PNR1
+
+BookedTicketHistory
+______________________
+barsha94@gmail.com
+
+registerUser
+______________
+{
+  "userName": "barsha94",
+  "password": "barsha94",
+  "email": "barsha94@gmail.com"
+}
+
+login
+_________
+{
+  "userName": "barsha94",
+  "password": "barsha94"
+}
+
+APi Gateway port
+____________________
+http://localhost:14414
